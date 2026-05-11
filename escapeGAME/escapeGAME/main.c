@@ -20,6 +20,16 @@
 #define FONT_COLOR_WHITE 37
 #define BG_COLOR_WHITE 47
 
+void set_color(int code)
+{
+	printf("\x1b[%dm", code);
+}
+
+int move_cursor(int x, int y)
+{
+	printf("\033[%d;%dH", y, x);
+	return 0;
+}
 
 void set_color(int code);
 int move_cursor(int x, int y);
@@ -34,7 +44,7 @@ int RenderTitle()
 	move_cursor(50, 9);
 	printf("                      ");
 	move_cursor(50, 10);
-	printf(" 이은석:추격의 시작  ");
+	printf("  이은석:추격의시작   ");
 	move_cursor(50, 11);
 	printf("                      ");
 
@@ -45,7 +55,7 @@ int RenderTitle()
 		set_color(BG_COLOR_YELLOW);
 	}
 	move_cursor(52, 13);
-	printf("  1. 시작  ");
+	printf("  1. 게임시작  ");
 	set_color(BG_COLOR_BLACK);
 
 	if (menu == 2)
@@ -95,6 +105,20 @@ int RenderTitle()
 
 			break;
 		}
+		if (menu == 2) {
+			system("cls");
+			menu = 0;
+			return 3;
+
+			break;
+		}
+		if (menu == 3) {
+			system("cls");
+			menu = 0;
+			return 4;
+
+			break;
+		}
 		else if (menu == 4)
 		{
 			isRunning = 0;
@@ -107,19 +131,41 @@ int RenderTitle()
 
 int MainGame()
 {
+	move_cursor(52, 13);
 	printf("game");
-}
-
-void set_color(int code)
-{
-	printf("\x1b[%dm", code);
-}
-
-int move_cursor(int x, int y)
-{
-	printf("\033[%d;%dH", y, x);
+	_getch();
+	system("cls");
 	return 0;
 }
+int GameEX()
+{
+	move_cursor(52, 10);
+	printf("대충 게임설명하는 내용");
+	move_cursor(52, 15);
+	printf("아무키나 누르면 타이틀로 돌아갑니더");
+	_getch();
+	system("cls");
+	return 0;
+}
+int Team()
+{
+	move_cursor(52, 8);
+	printf("팀소개");
+	move_cursor(52, 10);
+	printf("조건우 조장");
+	move_cursor(52, 12);
+	printf("이경빈 천재");
+	move_cursor(52, 14);
+	printf("김나라 천사");
+	move_cursor(52, 16);
+	printf("아무키나 누르면 타이틀");
+	_getch();
+	system("cls");
+	return 0;
+
+}
+
+
 
 int main()
 {
@@ -138,7 +184,14 @@ int main()
 		case 2:
 			gameStatus = MainGame();
 			break;
+		case 3:
+			gameStatus = GameEX();
+			break;
+		case 4:
+			gameStatus = Team();
+			break;
 		}
+
 
 	}
 
