@@ -59,11 +59,11 @@ int RenderTitle()
 
 	set_color(BG_COLOR_RED);
 	set_color(FONT_COLOR_WHITE);
-	move_cursor(100, 9);
+	move_cursor(120, 9);
 	printf("                      ");
-	move_cursor(100, 10);
+	move_cursor(120, 10);
 	printf("  이은석:추격의시작   ");
-	move_cursor(100, 11);
+	move_cursor(120, 11);
 	printf("                      ");
 
 	set_color(BG_COLOR_BLACK);
@@ -72,7 +72,7 @@ int RenderTitle()
 	{
 		set_color(BG_COLOR_YELLOW);
 	}
-	move_cursor(100, 13);
+	move_cursor(120, 13);
 	printf("  1. 게임시작  ");
 	set_color(BG_COLOR_BLACK);
 
@@ -80,7 +80,7 @@ int RenderTitle()
 	{
 		set_color(BG_COLOR_YELLOW);
 	}
-	move_cursor(100, 15);
+	move_cursor(120, 15);
 	printf("  2. 게임설명  ");
 	set_color(BG_COLOR_BLACK);
 
@@ -88,7 +88,7 @@ int RenderTitle()
 	{
 		set_color(BG_COLOR_YELLOW);
 	}
-	move_cursor(100, 17);
+	move_cursor(120, 17);
 	printf("  3. 팀소개  ");
 	set_color(BG_COLOR_BLACK);
 
@@ -96,7 +96,7 @@ int RenderTitle()
 	{
 		set_color(BG_COLOR_YELLOW);
 	}
-	move_cursor(100, 19);
+	move_cursor(120, 19);
 	printf("  4. 게임종료  ");
 	set_color(BG_COLOR_BLACK);
 
@@ -176,7 +176,7 @@ int Team()
 	move_cursor(52, 12);
 	printf("이경빈 천재");
 	move_cursor(52, 14);
-	printf("김나라 천사");
+	printf("정나라 천사");
 	move_cursor(52, 16);
 	printf("아무키나 누르면 타이틀");
 	_getch();
