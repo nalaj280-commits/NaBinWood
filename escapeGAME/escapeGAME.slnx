@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="ASCII_art/ASCII_art.vcxproj" Id="93d840d7-d06f-4551-b363-59229cfa985a" />
   <Project Path="escapeGAME/escapeGAME.vcxproj" Id="d7ce1510-48af-417c-ae71-3cf70f6db235" />
 </Solution>
