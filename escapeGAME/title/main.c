@@ -120,28 +120,26 @@ int RenderTitle()
 	case 13:
 		if (menu == 1) {
 			system("cls");
-			menu = 0;
+			
 			return 2;
-
 			break;
 		}
 		if (menu == 2) {
 			system("cls");
-			menu = 0;
+			
 			return 3;
-
 			break;
 		}
 		if (menu == 3) {
 			system("cls");
-			menu = 0;
+			
 			return 4;
-
 			break;
 		}
 		else if (menu == 4)
 		{
 			isRunning = 0;
+			
 
 		}
 	}
