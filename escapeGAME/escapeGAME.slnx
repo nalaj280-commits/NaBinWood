@@ -3,6 +3,11 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+<<<<<<< HEAD
   <Project Path="ASCII_art/ASCII_art.vcxproj" Id="3623f048-fde3-474f-947a-36ec6a07c5a1" />
   <Project Path="escapeGAME/escapeGAME.vcxproj" Id="d7ce1510-48af-417c-ae71-3cf70f6db235" />
+=======
+  <Project Path="ASCII_art/ASCII_art.vcxproj" Id="93d840d7-d06f-4551-b363-59229cfa985a" />
+  <Project Path="title/escapeGAME.vcxproj" Id="d7ce1510-48af-417c-ae71-3cf70f6db235" />
+>>>>>>> e715b660366a7d6eb964b708bb7af947b7b6d8df
 </Solution>

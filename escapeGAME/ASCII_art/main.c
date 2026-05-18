@@ -99,7 +99,7 @@ int main()
 
         while (*p)
         {
-            wchar_t char = *p;
+            wchar_t ch = *p;
 
             // 기본 색
             setColor(7);
@@ -109,7 +109,7 @@ int main()
                 i >= 14 && i <= 23 &&
                 x >= 56 && x <= 121 &&
 
-                char != L' '
+                ch != L' '
                 )
             {
                 setColor(6);
